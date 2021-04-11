@@ -1,7 +1,7 @@
 public class Primzahlen {
 
     /**
-     * Überprüft ob die Integer Zahl eine Primzahl ist
+     * Ueberprueft ob die Integer Zahl eine Primzahl ist
      * @param n - zu testende Zahl
      * @return true wenn Primzahl, sonst false
      */

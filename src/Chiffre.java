@@ -4,8 +4,8 @@ public class Chiffre {
     private final String SMALLLETTERS = BIGLETTERS.toLowerCase();
 
     /**
-     * Entschluesselt die Nachricht in allen möglichen Caesar-Verschiebungen und gibt diese aus
-     * @param nachricht - Verschlüsselte Nachricht
+     * Entschluesselt die Nachricht in allen moeglichen Caesar-Verschiebungen und gibt diese aus
+     * @param nachricht - Verschluesselte Nachricht
      */
     public void entschluessleNachricht(String nachricht){
         for (int i=1;i < 26;i++){
@@ -14,8 +14,8 @@ public class Chiffre {
     }
 
     /**
-     * Entschluesselt den Eingabe String mit der Caesar-Verschlüsselung
-     * @param nachricht - Zu entschlüsselnde Nachricht
+     * Entschluesselt den Eingabe String mit der Caesar-Verschluesselung
+     * @param nachricht - Zu entschluesselnde Nachricht
      * @param offset - Verschiebungindex
      * @return Entschluesselte Nachricht
      */
