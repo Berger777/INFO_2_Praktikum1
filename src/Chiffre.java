@@ -3,12 +3,22 @@ public class Chiffre {
     private final String BIGLETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //Array Indexes from 0 to 25
     private final String SMALLLETTERS = BIGLETTERS.toLowerCase();
 
+    /**
+     * Entschluesselt die Nachricht in allen möglichen Caesar-Verschiebungen und gibt diese aus
+     * @param nachricht - Verschlüsselte Nachricht
+     */
     public void entschluessleNachricht(String nachricht){
         for (int i=1;i < 26;i++){
             System.out.print(entschluessleNachrichtMitOffset(nachricht, i) + System.lineSeparator());
         }
     }
-    // TODO: IDEE WER AM WENIGSTEN CODE HAT STELLT VOR + KOMMENTARE
+
+    /**
+     * Entschluesselt den Eingabe String mit der Caesar-Verschlüsselung
+     * @param nachricht - Zu entschlüsselnde Nachricht
+     * @param offset - Verschiebungindex
+     * @return Entschluesselte Nachricht
+     */
     private String entschluessleNachrichtMitOffset(String nachricht, int offset) {
         StringBuilder bob = new StringBuilder();
         for (char c: nachricht.toCharArray()) {
